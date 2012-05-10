@@ -5,7 +5,6 @@ import qualified Data.Vector.Generic as GV
 import qualified Data.Vector.Storable as VS
 import qualified Data.Vector.Primitive as VP
 import qualified Data.Vector.Unboxed as VU
-import qualified Data.Vector.Generic.Mutable as GMV
 import Data.Binary
 
 instance (VP.Prim a, Binary a) => Binary (VP.Vector a) where
