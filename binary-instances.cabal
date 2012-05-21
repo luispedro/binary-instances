@@ -19,9 +19,13 @@ Library
     Build-Depends:
                 base
                 ,binary
+                ,ghc-prim
+                ,repa
                 ,vector
     Exposed-modules:
                 Data.Binary.Vector
+                ,Data.Binary.Array.Repa
+                ,Data.Binary.Generic
     GHC-Options: -Wall -fwarn-tabs -O2 -fno-warn-missing-signatures
 
 
@@ -37,5 +41,6 @@ Test-Suite test-binary-instances
                 ,test-framework-th
     Other-Modules:
                 Data.Binary.Tests.Vector
+                ,Data.Binary.Tests.Repa
     GHC-Options: -Wall -fwarn-tabs -fno-warn-missing-signatures
 
